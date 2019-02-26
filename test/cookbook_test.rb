@@ -17,6 +17,7 @@ class CookbookTest < Minitest::Test
    end
 
    def test_cookbook_summary
+     assert_equal [], @cookbook.summary
      @mac_and_cheese.add_ingredient(@cheese, 2)
      @mac_and_cheese.add_ingredient(@mac, 8)
      @burger.add_ingredient(@ground_beef, 4)

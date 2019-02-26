@@ -42,10 +42,4 @@ class RecipeTest < Minitest::Test
     assert_equal 440, @mac_and_cheese.total_calories
   end
 
-
-
-
 end
-
-# pry(main)> mac_and_cheese.total_calories
-# # => 440

@@ -21,10 +21,10 @@ class Pantry
   end
 
   def enough_ingredients_for?(recipe)
-    if recipe.ingredients_required <= @stock
-      true
-    else
+    if recipe.ingredients_required >= @stock
       false
+    else
+      true
     end
   end
 
